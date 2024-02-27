@@ -489,3 +489,33 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family:sans-se
   font-style: normal;
   font-display: swap;
 }
+
+
+.scrollable-table-container {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scrollable-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.scrollable-table th,
+.scrollable-table td {
+  padding: 12px; /* Increased padding for better spacing */
+  text-align: left;
+  border-bottom: 2px solid #ddd; /* Thicker border bottom for better visibility */
+}
+
+.scrollable-table th {
+  background-color: #f5f5f5; /* Light gray background for table headers */
+  font-weight: bold; /* Bold font for headers */
+}
+
+
+.scrollable-table tbody tr:hover {
+  background-color: #f0f0f0; /* Highlight row on hover */
+}
